@@ -18,7 +18,7 @@ pipeline {
        stage('Run Container on Jenkins Server'){
           steps {
                sh 'docker login -u prathimaambati -p Ganapathi@570'
-               sh "docker run -p 8085:8080 -d --name my-apll prathimaambati/webapp:${env.BUILD_ID}"
+               sh "docker run -p 8084:8080 -d --name my-apll prathimaambati/webapp:${env.BUILD_ID}"
           }
     }
  }
